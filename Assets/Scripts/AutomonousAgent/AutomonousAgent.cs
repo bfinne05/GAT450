@@ -17,5 +17,6 @@ public class AutomonousAgent : Agent
             movement.ApplyForce(direction * 2);
 
         }
+        transform.position = Utilities.Wrap(transform.position, new Vector3(-10, -10, -10), new Vector3(10, 10, 10));
     }
 }  
